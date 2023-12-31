@@ -1,25 +1,41 @@
 body {
  font-family: Arial, sans-serif;
  background-color: #f4f4f4;
- display: flex;
+ /* display: flex;
  justify-content: center;
  align-items: center;
- height: 100vh;
+ height: 100vh; */
+
+ }
+
+
+body:hover{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
 }
 
 form {
  background-color: hsla(33, 100%, 88%, 0.985);
  padding: 20px;
- border-radius: 8px;
+ /* border-radius: 8px; */
  width: 300px;
+ transition: border-radius 1s ease;
+}
+
+form:hover{
+ border-radius: 45px;
 }
 
 h2{
  font-size: 30px;
+ transition: background-color 0.5s;
 }
 
 h2:hover{
  background-color: burlywood;
+ border-radius: 6px;
 }
 
 label {
@@ -32,6 +48,7 @@ input{
  width: 100%;
  height: 32px;
  border-radius: 5px;
+ transition: background-color 1s;
 }
 
 input:hover{
@@ -46,3 +63,4 @@ input:hover{
  font-size: 14px;
  height: 30px;
 }
+
